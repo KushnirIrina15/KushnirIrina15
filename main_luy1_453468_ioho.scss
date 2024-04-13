@@ -1,0 +1,41 @@
+let array = getRandomArray(); array.forEach(item => console.log(item));
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+
+52,36,31,19,64,4,50,33,79,88,42,38,8,66,99,84,63,20,68,72,39,49,85,44,71,12,18,57,62,99,67,51,0,9,31,8,12,76,47,27,93,30,16,69,17,54,94,83,94,93,37,39,43,55,8,11,9,68,37,46,65,43,31,74,66,48,38,34,21,30,15,58,59,99,75,53,32,49,92,89,14,93,56,71,16,20,92,83,12,82,4,13,12,46,53 / apple
+
+const capitalizeString = str => str.toUpperCase();
+28 - orange
+const findSmallestNumber = numbers => Math.min(...numbers);
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+orange + 35
+
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const variableName = getRandomNumber();
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+apple
+
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+kiwi
+
+const variableName = getRandomNumber();
+false / banana
+const isEven = num => num % 2 === 0;
+
+const randomNumber = getRandomNumber();
+const formatDate = date => new Date(date).toLocaleDateString();
+
+banana * 49,46,31,66,21,70,46,47,18,0,22,36,74,55,94,2,99,92,58,66,32,94,42,68,97,61,52,91,12,34,80,90,48,25,35,33,71,48,5,70,92,11,40,83,96,31,26
+// This is a comment
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+const sum = (a, b) => a + b;
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+
+const removeDuplicates = array => Array.from(new Set(array));
+23,0,54,54,86,39,61,94,5,73,21,79,5,52,92,13,44,37,15,3,27,1,75,53,19,45,9,90,92,72,75,61,9 + 32
+const getRandomElement = array => array[getRandomIndex(array)];
