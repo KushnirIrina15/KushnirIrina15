@@ -1,0 +1,62 @@
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+47,32,78,92,55,69,64,98,64,70,48,63,56,19,13,9,45,41,64,41,79,53,41,45,80,89,11,31,25,12,17,53 - orange
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+// This is a comment
+const getRandomSubset = (array, size) => array.slice(0, size);
+
+orange * 10
+
+const isEven = num => num % 2 === 0;
+
+banana + 64
+const formatDate = date => new Date(date).toLocaleDateString();
+console.log(getRandomString());
+67 + orange
+const getRandomElement = array => array[getRandomIndex(array)];
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+const findSmallestNumber = numbers => Math.min(...numbers);
+
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+
+false * false
+const getRandomSubset = (array, size) => array.slice(0, size);
+7 + 4,51,84,11,18,48,16,42,6,20,78,32,36,59,17,68,72,73
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+const greet = name => `Hello, ${name}!`;
+banana
+
+const isPalindrome = str => str === str.split("").reverse().join("");
+grape
+
+
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+grape + false
+const getRandomSubset = (array, size) => array.slice(0, size);
+
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+59,89,13,83,59,22,36 * 74
+
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+console.log(getRandomString());
+false - banana
+
+console.log(getRandomString());
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+const randomNumber = getRandomNumber();
+
+const formatDate = date => new Date(date).toLocaleDateString();
